@@ -1,0 +1,154 @@
+/* pages/result.wxss */
+.result-page {
+  height: 100vh;
+  width: 100vw;
+  background: url(https://prod-9gq4aqrg710d5d73-1317000993.tcloudbaseapp.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230708232052.jpg?sign=b3eaec7caa411b2e6da2adb14214742b&t=1688829705) center/contain no-repeat;
+  z-index: -1;
+}
+
+.page-content {
+  background-color: rgba(199, 246, 250, 0.322);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 20rpx;
+  width: 100vw;
+  backdrop-filter: blur(7px);
+}
+
+.page-title {
+  margin-top: 20rpx;
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10rpx;
+  background-color: rgba(255, 255, 255, 0.45);
+  width: 600rpx;
+}
+
+.comment {
+  flex-wrap: wrap;
+  gap: 8rpx;
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  margin-top: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 10rpx;
+  background-color: rgba(255, 255, 255, 0.45);
+  width: 600rpx;
+  padding-top: 20rpx;
+  font-size: 36rpx;
+  color: rgb(46, 46, 46);
+  font-weight: bold;
+}
+
+
+.score-title {
+  padding-top: 20rpx;
+  font-size: 48rpx;
+  color: rgb(46, 46, 46);
+  font-weight: bold;
+}
+
+.score-number {
+  line-height: 200rpx;
+  font-size: 120rpx;
+  color: rgb(0, 241, 213);
+  font-weight: bold;
+  text-shadow: 1rpx 1rpx 2rpx rgba(95, 95, 95, 0.35);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.one-line {
+  margin-top: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 10rpx;
+  background-color: rgba(255, 255, 255, 0.45);
+
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  width: 600rpx;
+  justify-content: center;
+  vertical-align: center;
+
+}
+.feedback {
+  width: 600rpx;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color:#333;
+  font-weight: bold;
+}
+
+.author-name {
+  font-weight: bold;
+  margin-right: 20rpx;
+  line-height: 120rpx;
+  font-size: 40rpx;
+  color: #333333;
+}
+
+.author-image {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 120rpx;
+}
+
+.red-label {
+  background-color: rgb(255, 128, 128);
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+  color: white;
+  font-weight: normal;
+}
+.green-label {
+  background-color: rgb(0, 221, 221);
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+  color: white;
+  font-weight: normal;
+}
+.blue-label {
+  background-color: rgb(0, 151, 221);
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+  color: white;
+  font-weight: normal;
+}
+.yellow-label {
+  background-color: rgb(255, 187, 0);
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+  color: white;
+  font-weight: normal;
+}
+.orange-label {
+    background-color: rgb(255, 137, 83);
+    padding-left: 16rpx;
+    padding-right: 16rpx;
+    line-height: 60rpx;
+    border-radius: 10rpx;
+    color: white;
+    font-weight: normal;
+}

@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class='cover-container'>
+    <image mode="widthFix" class='cover' src='https://i.imgtg.com/2023/02/24/s0dES.png' ></image>
+    <view class='intro' bindtap='intro'>说明</view>
+    <view class='start' bindtap='startTest'>开始</view>
+    <view class='advice' bindtap='question'>意见反馈</view>
+</view>

@@ -1,0 +1,66 @@
+<!--pages/song.wxml-->
+<view hidden="{{!submitted}}">
+    <image class='songCover' src='{{song.cover}}'></image>
+    <view class='bilibili' bindtap='copyUrl'>
+        <image src='../../image/bili.svg'></image>
+        <div>原曲链接</div>
+    </view>
+</view>
+
+<view>
+    <div class='mask'></div>
+    <view>
+        <view wx:if="{{isPlayAudio}}">
+            <image class='vinyl' src='../../image/vinyl.gif'></image>
+        </view>
+        <view wx:else>
+            <image class='vinyl' src='https://i.imgtg.com/2023/02/24/sluYC.png'></image>
+        </view>
+    </view>
+</view>
+<view class='audioPlayer'>
+    <view class='player'>
+        <view class='audioControls'>
+            <view class='bottom' catchtap='playAudio'>
+                <view wx:if="{{isPlayAudio}}">
+                    <image src='../../image/pause.svg' />
+                </view>
+                <view wx:else>
+                    <image src='../../image/play.svg' />
+                </view>
+            </view>
+            <view class='slider'>
+                <slider bindchange='sliderChange' block-color="#1FE2C6" activeColor='#1FE2C6' backgroundColor="#bebebe" block-size="12" value='{{audioTime}}' />
+            </view>
+        </view>
+    </view>
+</view>
+<view class='hintBlock'>
+    <view wx:if="{{hint}}" class='hintOnBlock'>
+        <view>
+            <image class='hint-icon' src='../../image/light-on.svg'></image>
+        </view>
+        <view>
+            <view class='one-line' wx:for="{{song.slogan}}" wx:key="*this" class='slogan'>
+                {{item}}
+            </view>
+        </view>
+    </view>
+    <view wx:else catchtap='hintOn'>
+        <image class='hint-icon' src='../../image/light.svg' />
+    </view>
+</view>
+<view class="{{wrong === true ? 'wrongAnswerBlock' : 'answerBlock'}}">
+    <input maxlength="20" placeholder="请输入歌名" model:value="{{answer}}" disabled="{{submitted}}" bindinput="inputAnswer"></input>
+    <image wx:if="{{submitted===false}}" class="submit" src="../../image/check.svg" bindtap='checkAnswer'></image>
+    <image wx:elif="{{wrong}}" class="submit" src="../../image/cross.svg"></image>
+    <image wx:else src='../../image/correct.svg' class='submit'></image>
+</view>
+<view class="correctAnswer" wx:if="{{wrong}}" bindtap='nextSong'>
+    {{song.name}}
+    <image class='nextPage' src="../../image/next.svg"></image>
+</view>
+<view class="correctAnswer" wx:elif="{{submitted}}" bindtap='nextSong'>
+    继续
+    <image class='nextPage' src="../../image/next.svg"></image>
+</view>

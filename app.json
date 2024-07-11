@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/hint/hint",
+    "pages/song/song",
+    "pages/result/result"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#64CDC1",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "言和原创曲猜歌🎵",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "darkmode": true,
+  "usingComponents": {}
+}

@@ -1,0 +1,38 @@
+<!--pages/hint.wxml-->
+<view class='result-page'>
+  <view class='page-content'>
+    <view class='page-box'>
+      <view class='score-title'>规则说明:</view>
+      <view class='button-intro'>
+        <image src='../../image/play.svg' />
+        <view class='button-text'>播放歌曲片段</view>
+      </view>
+      <view class='button-intro'>
+        <image class='hint-icon' src='../../image/light-on.svg'></image>
+        <view class='button-text'>显示歌词提示</view>
+      </view>
+      <view class='button-intro'>
+        <image class='hint-icon' src='../../image/check.svg'></image>
+        <view class='button-text'>提交歌名回答</view>
+      </view>
+      <view class='rule-list'>
+        <view> 1. 平衡题目难度时因为综合考虑了各种因素，不可避免地会带有…可能是非常多的主观性🙈
+        </view>
+        <view> 2. 仅包含原创曲，除了solo还选取了少量合唱曲</view>
+        <view> 3. 相信每个言厨心中都有那么几个作品让你感叹“多年良曲无人识”，在准备的时候也回顾了一些我的“人生歌曲”。衷心希望这些💎宝藏曲💎能被更多人看到！</view>
+        <view>4. 有的名字很有可能想破脑袋也想不出来（）翻了收藏夹以后找到了也、也算你对吧</view>
+        <view>5. 只听真的太难太难了，所以还设置了⭐超方便⭐歌词提示（结果更像文字猜谜了x）</view>
+        <view>6. 为了让分数好看一点分值分布并不均匀</view>
+        <view>7. 根据答题情况可达成不同成就~请慢慢探索🎃</view>
+        <view> 8. 祝各位玩得开心，答完之后记得考古一下老曲助力一下新曲！</view>
+        <view> 9. 镑十五便士 </view>
+        <view>10. 请注意题库的选择和本规则的编写都是在2024.7更新的
+        </view>
+        <view>11. 周年快乐！一套题共含11首歌
+        </view>
+      </view>
+    </view>
+    <view class='start' bindtap='returnToHome'>返回</view>
+    <view class='hint'>developed by Inco</view>
+  </view>
+</view>

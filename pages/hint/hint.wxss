@@ -1,0 +1,79 @@
+.result-page {
+  height: 100vh;
+  width: 100vw;
+  background: url(https://prod-9gq4aqrg710d5d73-1317000993.tcloudbaseapp.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230708232052.jpg?sign=b3eaec7caa411b2e6da2adb14214742b&t=1688829705) center/contain no-repeat;
+  z-index: -1;
+}
+.page-content {
+  background-color: rgba(199, 246, 250, 0.322);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(7px);
+}
+.page-box {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10rpx;
+  background-color: rgba(255, 255, 255, 0.45);
+  width: 600rpx;
+  max-height: 1150rpx;
+}
+.button-intro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10rpx;
+    font-size: 26rpx;
+    color: #666666;
+}
+.button-intro image {
+    height: 40rpx;
+    width: 40rpx;
+}
+.score-title {
+  padding-top: 20rpx;
+  font-size: 48rpx;
+  color: rgb(46, 46, 46);
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.rule-list {
+  margin-top: 26rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+  font-size: 28rpx;
+  overflow: auto;
+  color: #333333;
+}
+.start {
+  position: absolute;
+  bottom: 128rpx;
+  width: 300rpx;
+  height: 88rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1FE2C6;
+  border-radius: 12rpx;
+  color: #FFFFFF;
+  font-family: HYQiHei;
+  font-size: 32rpx;
+  font-weight: bold;
+  /* 颜色/渐变主题色 */
+  background: linear-gradient(129.68deg, #99ffff 0%, #00f7ff 100%);
+  box-shadow: 0px 4px 15px rgba(31, 226, 198, 0.3);
+  border-radius: 5px;
+}
+.hint {
+    position: absolute;
+    bottom: 20rpx;
+    font-size: 22rpx;
+    color: #666666;
+}

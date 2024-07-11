@@ -1,0 +1,23 @@
+<!--pages/result.wxml-->
+<view class='result-page'>
+  <view class='page-content'>
+    <view class='page-title'>
+      <view class='score-title'>最终得分:</view>
+      <view class='score-number'>{{score}}</view>
+    </view>
+    <view class='comment' wx:if="{{recommends.length > 0}}">
+    <view  wx:for="{{recommends}}" wx:key="*this" class="{{item.style}}">
+    {{item.name}}
+    </view>
+    </view>
+    <view class='feedback' wx:if="{{author.length > 0}}">
+      也许你应该关注：
+    </view>
+    <view class='one-line' wx:for="{{author}}" wx:key="*this">
+        <view class='author-name'>{{item.name}}</view>
+        <view>
+          <image class='author-image' src='{{item.icon}}'></image>
+        </view>
+      </view>
+  </view>
+</view>
